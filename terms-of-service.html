@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Service · Forge</title>
+  <meta name="description" content="Terms of Service for Forge by Maken.dev, a trader. Consumer protection laws in the EEA and UK apply.">
+  <meta name="robots" content="index,follow">
+  <style>
+    :root {
+      --cream: #FDF9F1;
+      --paper: #F7F3EA;
+      --ink: #14241C;
+      --muted: #4D6358;
+      --line: rgba(27, 67, 50, 0.12);
+      --forest: #1B4332;
+      --leaf: #40916C;
+      --gold: #B68A3A;
+      --gold-soft: rgba(182, 138, 58, 0.14);
+      --white: #FFFdf8;
+      --shadow: 0 18px 50px rgba(20, 36, 28, 0.08);
+      --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+      --sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1200px 500px at 10% -10%, rgba(64, 145, 108, 0.10), transparent 55%),
+        radial-gradient(900px 420px at 100% 0%, rgba(182, 138, 58, 0.12), transparent 50%),
+        var(--cream);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+    a { color: var(--forest); }
+    a:hover { color: var(--leaf); }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 28px 22px 80px; }
+    header.top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+    .mark {
+      width: 42px; height: 42px; border-radius: 12px;
+      background: var(--forest); display: grid; place-items: center;
+      box-shadow: 0 8px 18px rgba(27, 67, 50, 0.25);
+    }
+    .brand-name { font-family: var(--serif); font-weight: 600; font-size: 22px; letter-spacing: -0.03em; }
+    .brand-sub { font-size: 12px; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; }
+    nav.links { display: flex; gap: 8px; flex-wrap: wrap; }
+    nav.links a {
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+    }
+    nav.links a.active { background: var(--forest); color: #fff; border-color: var(--forest); }
+    .hero {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 42px 40px 36px;
+      box-shadow: var(--shadow);
+      margin-bottom: 28px;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold-soft); color: #7A5A1E;
+      font-size: 12px; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; padding: 6px 12px; border-radius: 999px;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.1;
+      margin: 16px 0 12px;
+      letter-spacing: -0.035em;
+    }
+    .lede { max-width: 62ch; color: var(--muted); margin: 0; }
+    .meta { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 22px; color: var(--muted); font-size: 14px; }
+    .layout { display: grid; grid-template-columns: 240px 1fr; gap: 28px; align-items: start; }
+    .toc {
+      position: sticky; top: 18px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px 16px;
+    }
+    .toc h2 { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin: 0 0 10px; color: var(--muted); }
+    .toc a { display: block; text-decoration: none; color: var(--ink); font-size: 14px; padding: 6px 8px; border-radius: 8px; }
+    .toc a:hover { background: var(--paper); }
+    article {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 18px 36px 48px;
+      box-shadow: var(--shadow);
+    }
+    h2 {
+      font-family: var(--serif);
+      font-size: 26px;
+      margin: 42px 0 12px;
+      letter-spacing: -0.03em;
+      scroll-margin-top: 20px;
+    }
+    h3 { font-size: 18px; margin: 24px 0 8px; }
+    p, li { color: #24362d; }
+    ul { padding-left: 1.15em; }
+    li { margin: 6px 0; }
+    .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 8px; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 16px 14px;
+      background: var(--paper);
+    }
+    .card strong { display: block; margin-bottom: 4px; }
+    .card span { font-size: 14px; color: var(--muted); }
+    .callout {
+      border-left: 3px solid var(--gold);
+      background: var(--gold-soft);
+      padding: 14px 16px;
+      border-radius: 0 14px 14px 0;
+      margin: 18px 0;
+    }
+    .callout.forest {
+      border-left-color: var(--forest);
+      background: rgba(27, 67, 50, 0.06);
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 14px 0 8px; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    footer {
+      margin-top: 28px; color: var(--muted); font-size: 14px; text-align: center;
+    }
+    @media (max-width: 860px) {
+      .layout { grid-template-columns: 1fr; }
+      .toc { position: static; }
+      .hero, article { padding: 26px 20px 32px; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="#top">
+        <span class="mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3l2.2 6.2H21l-5.3 3.9 2 6.4L12 16.4 6.3 19.5l2-6.4L3 9.2h6.8L12 3z" fill="#FDF9F1"/>
+          </svg>
+        </span>
+        <span>
+          <div class="brand-name">Forge</div>
+          <div class="brand-sub">Meet the new you</div>
+        </span>
+      </a>
+      <nav class="links">
+        <a href="./privacy-policy.html">Privacy Policy</a>
+        <a class="active" href="./terms-of-service.html">Terms of Service</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="top">
+      <span class="eyebrow">Trader · Consumer protections apply</span>
+      <h1>Terms of Service</h1>
+      <p class="lede">These terms govern your use of Forge. Maken.dev is a trader. This app is offered in the course of trade, so consumer protection laws in the EEA and the UK apply. Nothing in these terms limits rights you cannot waive under those laws.</p>
+      <div class="meta">
+        <span>Effective: 11 November 2026</span>
+        <span>App: Forge (com.maken.dev.forge)</span>
+        <span>Play Store: Google Play global listing</span>
+      </div>
+    </section>
+
+    <div class="layout">
+      <aside class="toc">
+        <h2>On this page</h2>
+        <a href="#trader">Trader identity</a>
+        <a href="#agreement">The agreement</a>
+        <a href="#service">The service</a>
+        <a href="#pro">Forge Pro</a>
+        <a href="#withdrawal">EEA / UK withdrawal</a>
+        <a href="#acceptable">Acceptable use</a>
+        <a href="#liability">Liability</a>
+        <a href="#law">Governing law</a>
+        <a href="#contact">Contact</a>
+      </aside>
+
+      <article>
+        <h2 id="trader">1. Trader identity</h2>
+        <p>Under relevant laws, a trader is any individual or organization acting for purposes relating to their trade, business, craft, or profession. <strong>Yes — trader status applies to this app.</strong> Users in the EEA and UK are protected by consumer law. This is not a non-trader / private-individual listing.</p>
+        <div class="card-grid">
+          <div class="card">
+            <strong>Legal / trading name</strong>
+            <span>Maken.dev, trading as Forge</span>
+          </div>
+          <div class="card">
+            <strong>Email</strong>
+            <span><a href="mailto:maken.hq.dev@gmail.com">maken.hq.dev@gmail.com</a></span>
+          </div>
+          <div class="card">
+            <strong>Postal address</strong>
+            <span>As published on the Google Play listing for Forge (required trader disclosure).</span>
+          </div>
+          <div class="card">
+            <strong>App</strong>
+            <span>Forge · com.maken.dev.forge · Android via Google Play</span>
+          </div>
+        </div>
+        <div class="callout forest">Google Play will show trader details globally on the store listing. Keep the name, address, and email in Play Console identical to the details you use here.</div>
+
+        <h2 id="agreement">2. Agreement</h2>
+        <p>By downloading or using Forge you agree to these Terms and to the <a href="./privacy-policy.html">Privacy Policy</a>. If you do not agree, do not use the app. If you use Forge on behalf of an organization, you confirm you have authority to bind it.</p>
+        <p>You must be old enough to form a binding contract in your country, and not barred from using Google Play. Forge is not intended for children under 13, or under the age of digital consent where that is higher.</p>
+
+        <h2 id="service">3. The service</h2>
+        <p>Forge is a habit-building app. Features may include a daily Flow path, list and routine views, stats, streaks, XP and levels, trophies, local reminders, timers, counters, subtasks, and optional Forge Pro (ad-free).</p>
+        <ul>
+          <li>Habit data is stored on your device. Uninstalling or clearing storage can delete it. Keep your own backup if that data matters to you.</li>
+          <li>Reminders depend on device settings, battery optimizations, and the permissions you grant.</li>
+          <li>We may change, suspend, or discontinue features, including free-tier ads, with reasonable notice where the law requires it.</li>
+          <li>Forge is a self-improvement tool, not medical, mental-health, or professional advice.</li>
+        </ul>
+        <p>We grant you a personal, non-exclusive, non-transferable, revocable licence to use Forge on devices you own or control, solely as offered through Google Play. You do not acquire ownership of the software, trademarks, or content we provide.</p>
+
+        <h2>4. Advertising</h2>
+        <p>The free version may show Google ads. Ads are part of the free service. Forge Pro removes in-app ads. Ad content is provided by third parties; we are not responsible for advertiser sites or offers.</p>
+
+        <h2 id="pro">5. Forge Pro subscriptions</h2>
+        <p>Forge Pro is an auto-renewing subscription billed by Google Play. Prices displayed in the app are indicative; the price, currency, and tax shown by Google Play at purchase are controlling.</p>
+        <table>
+          <thead>
+            <tr><th>Plan</th><th>Advertised price</th><th>Renewal</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Monthly</td><td>USD 4.99</td><td>Every month until cancelled</td></tr>
+            <tr><td>Yearly</td><td>USD 49.99</td><td>Every year until cancelled</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>Payment is charged to your Google Play account at confirmation of purchase.</li>
+          <li>Renewal is charged within 24 hours before the end of the current period unless you cancel first.</li>
+          <li>Cancel anytime in Google Play: Play Store → Profile → Payments &amp; subscriptions → Subscriptions → Forge.</li>
+          <li>Cancelling stops the next renewal. You keep Pro until the period you already paid for ends.</li>
+          <li>Restore purchases on a new device with the same Google account.</li>
+        </ul>
+        <p>Refunds are handled under <a href="https://support.google.com/googleplay/answer/2479637" rel="noopener">Google Play’s refund policy</a>, except where your local consumer law requires more. Contact us first if something went wrong; we can help you with Play refund requests where we can.</p>
+
+        <h2 id="withdrawal">6. EEA and UK consumer rights</h2>
+        <p>Because trader status applies, EEA and UK consumers have statutory rights that these terms do not take away, including rights on digital content that is not as described, not fit for purpose, or not of satisfactory quality, and rights of withdrawal where they still apply.</p>
+        <h3>Right of withdrawal (14 days)</h3>
+        <p>If you are a consumer in the EEA or UK, you generally have 14 days from purchase to withdraw from a distance contract. For digital content supplied immediately (including unlocking Forge Pro in the app), that right is lost if you:</p>
+        <ol>
+          <li>expressly consent to performance starting during the withdrawal period; and</li>
+          <li>acknowledge that you lose the right of withdrawal once performance begins; and</li>
+          <li>we provide confirmation of that agreement as required by law.</li>
+        </ol>
+        <p>Google Play’s purchase flow is designed to collect that consent for in-app digital content. If you are entitled to withdraw and have not lost that right, email <a href="mailto:maken.hq.dev@gmail.com">maken.hq.dev@gmail.com</a> with your order details, or use Google Play’s refund tools. You do not need to give a reason.</p>
+        <p><strong>Model withdrawal wording:</strong> “I hereby withdraw from my contract for Forge Pro, ordered on [date], Google order [number]. Name: [your name].”</p>
+        <h3>Alternative dispute resolution</h3>
+        <p>EU consumers may use the European Commission’s ODR platform at <a href="https://ec.europa.eu/consumers/odr" rel="noopener">ec.europa.eu/consumers/odr</a>. We are not obliged to use a specific ADR body unless the law says otherwise. You may also bring claims in the courts of your country of residence.</p>
+
+        <h2 id="acceptable">7. Acceptable use</h2>
+        <p>You agree not to reverse engineer the app except as allowed by law, disrupt the service, misuse ads or purchases, scrape the product, or use Forge for unlawful purposes. We may suspend access for serious or repeated breaches, after any notice required by consumer law.</p>
+
+        <h2>8. Intellectual property and your content</h2>
+        <p>Forge, the name, icons, copy, and software are owned by Maken.dev or licensors. Habit names, notes, photos, and similar content you enter remain yours. You grant us only the limited technical permission needed to store that content on your device and, if you use the share sheet, to hand a file or message to the OS share target you choose.</p>
+
+        <h2 id="liability">9. Warranty and liability</h2>
+        <p><strong>Consumers in the EEA, UK, and other places with mandatory protections:</strong> we provide Forge with reasonable care and skill. Statutory guarantees apply. We do not exclude liability for death or personal injury caused by negligence, fraud, or any liability that cannot legally be limited.</p>
+        <p><strong>Where the law allows (including business users):</strong> the app is provided “as is”. We are not liable for lost data on your device, missed reminders, or indirect or consequential loss. Our total liability for a claim is limited to the greater of (a) the amount you paid us for Forge Pro in the 12 months before the claim and (b) USD 50.</p>
+        <p>Forge does not replace professional advice. Use timers, alarms, and health-related habits at your own judgement.</p>
+
+        <h2 id="law">10. Governing law</h2>
+        <p>These terms are governed by the laws of the country of establishment shown with our trader details on the Google Play listing for Forge, except that if you are a consumer in the EEA or UK, you also keep the mandatory protections of the law of your country of residence. You may bring proceedings in your local courts. The UN Convention on Contracts for the International Sale of Goods does not apply.</p>
+
+        <h2>11. Changes</h2>
+        <p>We may update these terms for legal, technical, or business reasons. The effective date will change. For material changes that affect existing subscribers, we will give reasonable notice in the app or on this page where required. If you do not agree, stop using Forge and cancel any subscription before the next renewal.</p>
+
+        <h2>12. General</h2>
+        <p>If a term is unenforceable, the rest remains in effect. Our failure to enforce a term is not a waiver. You may not assign these terms; we may assign them in connection with a transfer of the business. These terms are the entire agreement for Forge, together with the Privacy Policy and Google Play’s terms that apply to your download and payment.</p>
+
+        <h2 id="contact">13. Contact</h2>
+        <p>Maken.dev — Forge support<br>
+        <a href="mailto:maken.hq.dev@gmail.com">maken.hq.dev@gmail.com</a><br>
+        Postal address and any additional trader details: Google Play listing for <a href="https://play.google.com/store/apps/details?id=com.maken.dev.forge">Forge</a>.</p>
+        <div class="callout">Google Play Console field: paste the public HTTPS URL of this page into <em>Store presence → Store settings / App content → Terms of Service</em>. Confirm “Yes, my trader status applies to this app.”</div>
+      </article>
+    </div>
+
+    <footer>
+      © 2026 Maken.dev · Forge · <a href="./privacy-policy.html">Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+</html>
