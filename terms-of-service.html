@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Service for BattleCall - Your AI Alarm &amp; Reminder Coach">
+    <title>Terms of Service - BattleCall | maken.dev</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .tagline {
+            font-size: 1.1em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .header .company {
+            margin-top: 20px;
+            font-size: 0.95em;
+            opacity: 0.85;
+        }
+
+        .legal-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+            font-size: 0.95em;
+        }
+
+        .legal-nav a {
+            color: white;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        .last-updated {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 40px;
+            border-radius: 4px;
+            font-size: 0.95em;
+            color: #666;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin: 30px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 15px 0 15px 30px;
+            color: #555;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            margin: 40px -40px -50px -40px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: white;
+            border: none;
+            margin-top: 0;
+        }
+
+        .contact-section a {
+            color: white;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .contact-logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: brightness(0) invert(1) drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .company-logo {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 1.2em;
+            color: #667eea;
+            letter-spacing: 0.5px;
+        }
+
+        .effective-date {
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #764ba2;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 40px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .contact-section {
+                margin: 40px -20px -30px -20px;
+                padding: 30px 20px;
+            }
+
+            .contact-logo {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="./assets/splash screen.png" alt="maken.dev Logo" onerror="this.style.display='none'">
+            </div>
+            <h1>Terms of Service</h1>
+            <div class="tagline">BattleCall | Your AI Alarm &amp; Reminder Coach</div>
+            <div class="company">
+                Developed by <span class="company-logo">maken.dev</span>
+            </div>
+            <div class="legal-nav">
+                <a href="./privacy-policy.html">Privacy Policy</a>
+                <a href="./terms-of-service.html">Terms of Service</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="last-updated">
+                <strong>Effective date:</strong> <span class="effective-date">November 11, 2026</span>
+            </div>
+
+            <p>
+                These Terms of Service ("Terms") govern your use of the BattleCall mobile application
+                ("BattleCall", "the app") provided by <strong>maken.dev</strong> ("we", "us", or "our").
+                By downloading, installing, or using BattleCall, you agree to these Terms.
+                If you do not agree, do not use the app.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Trader status.</strong> maken.dev acts as a trader in relation to BattleCall.
+                If you are a consumer in the European Economic Area (EEA) or the United Kingdom,
+                statutory consumer protection laws apply to your use of this app and cannot be waived
+                by these Terms.
+            </div>
+
+            <h2>1. The App</h2>
+            <p>
+                BattleCall is an alarm and reminder app. It lets you schedule alarms, choose how you
+                dismiss them (including QR scan, object scan, steps, and similar missions), play
+                sounds or voice memos, and optionally generate motivational messages with AI Coach.
+            </p>
+            <p>
+                We grant you a personal, non-exclusive, non-transferable, revocable licence to use
+                BattleCall on devices you own or control, solely for your own personal use, in
+                accordance with these Terms and Google Play's terms.
+            </p>
+
+            <h2>2. Who May Use BattleCall</h2>
+            <ul>
+                <li>You must be at least 13 years old.</li>
+                <li>If you are under the age of majority in your country, you may use the app only
+                    with a parent or guardian's consent.</li>
+                <li>You are responsible for the device, permissions, and Google account used with the app.</li>
+            </ul>
+
+            <h2>3. Your Responsibilities</h2>
+            <p>You agree that:</p>
+            <ul>
+                <li>You will use BattleCall only for lawful purposes.</li>
+                <li>You will grant the permissions the features you choose actually need
+                    (notifications, exact alarms, camera, microphone, and so on).</li>
+                <li>You will not reverse engineer, scrape, or interfere with the app or its services.</li>
+                <li>You will not use BattleCall as a medical device, emergency alert system, or
+                    life-critical timer. Alarms can be delayed or missed because of device settings,
+                    battery optimisation, Do Not Disturb, volume, or operating-system behaviour.</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>Alarms are not guaranteed.</strong> Some Android manufacturers restrict background
+                apps. Follow the in-app battery and permission guidance, and keep a backup alarm if
+                missing a wake-up would cause serious harm.
+            </div>
+
+            <h2>4. Unlock Methods, Camera, and Local Content</h2>
+            <p>
+                Features such as QR unlock and object-scan unlock use the camera on your device.
+                Object-scan photos are stored locally so the app can match the same object later.
+                They are not uploaded to maken.dev.
+            </p>
+            <p>
+                Voice memos, custom media, goals, plans, and streak data you enter stay on your device
+                unless a feature you opt into sends data elsewhere (see Section 6 and our
+                <a href="./privacy-policy.html">Privacy Policy</a>).
+            </p>
+            <p>
+                You are responsible for content you add. Do not use the camera, microphone, or storage
+                features in a way that violates others' privacy or rights.
+            </p>
+
+            <h2>5. Premium, Purchases, and Ads</h2>
+            <h3>5.1 In-app purchases</h3>
+            <p>
+                BattleCall offers optional Premium features through Google Play billing, verified
+                with RevenueCat. Prices are shown in the app and on Google Play before you buy.
+                Payment is processed by Google, not by maken.dev. We never receive your card details.
+            </p>
+            <h3>5.2 Subscriptions and lifetime purchases</h3>
+            <ul>
+                <li>Subscriptions renew automatically until you cancel in Google Play.</li>
+                <li>Cancel at least 24 hours before the current period ends to avoid the next charge,
+                    unless Google Play's rules say otherwise.</li>
+                <li>A lifetime purchase, if offered, is licensed for as long as BattleCall is
+                    available on that Google account, not a transfer of ownership of the software.</li>
+            </ul>
+            <h3>5.3 Refunds</h3>
+            <p>
+                Refunds are handled by Google Play according to Google's refund policy.
+                Contact Google Play support for billing disputes. If you are an EEA or UK consumer,
+                you also keep any cancellation or refund rights that cannot be excluded by law.
+            </p>
+            <h3>5.4 Ads</h3>
+            <p>
+                The free version may show ads via Google AdMob. Premium removes ads. Ads are served
+                by Google and may use your advertising identifier as described in the Privacy Policy.
+            </p>
+
+            <h2>6. AI Coach and Third-Party Services</h2>
+            <p>
+                If you choose AI Coach, BattleCall sends the text needed to generate your wake-up
+                message (such as your name, goals, or daily plans) to Google Gemini over HTTPS.
+                That processing is subject to
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+                You can avoid this by using Ringtone, Voice Memo, or Custom Media instead.
+            </p>
+            <p>
+                Purchases are verified with RevenueCat. Crash and usage analytics and ads may use
+                Google Firebase / AdMob. Expo / React Native may collect anonymous crash and
+                performance data. Those providers process data under their own terms.
+            </p>
+            <p>
+                We are not responsible for outages, content, or policy changes of those third parties.
+            </p>
+
+            <h2>7. Intellectual Property</h2>
+            <p>
+                BattleCall, including its name, design, code, sounds, and branding, is owned by
+                maken.dev or its licensors. These Terms do not transfer any ownership to you.
+            </p>
+            <p>
+                You keep ownership of content you create in the app (goals, recordings, photos).
+                You grant us a limited licence to process that content only as needed to provide
+                the features you use, including local matching for object scan and optional AI Coach
+                generation.
+            </p>
+
+            <h2>8. Availability and Changes</h2>
+            <p>
+                We may update, suspend, or discontinue features. We may also update these Terms.
+                The effective date at the top will change. Continued use after an update means you
+                accept the revised Terms, except where the law requires a different process.
+            </p>
+            <p>
+                We do not promise uninterrupted service. Device manufacturers, Google Play, and
+                network conditions are outside our control.
+            </p>
+
+            <h2>9. Disclaimer</h2>
+            <p>
+                BattleCall is provided "as is" and "as available". To the fullest extent permitted
+                by law, we disclaim implied warranties of merchantability, fitness for a particular
+                purpose, and non-infringement.
+            </p>
+            <p>
+                We do not warrant that every alarm will ring on time, that AI-generated text will be
+                accurate or appropriate, or that object scan will always match in every lighting
+                condition.
+            </p>
+            <p>
+                Nothing in these Terms excludes warranties or rights that the law does not allow us
+                to exclude, including mandatory consumer guarantees in the EEA and the UK.
+            </p>
+
+            <h2>10. Limitation of Liability</h2>
+            <p>
+                To the fullest extent permitted by law, maken.dev is not liable for lost profits,
+                lost data, missed appointments, or indirect or consequential loss arising from your
+                use of BattleCall, including missed or late alarms.
+            </p>
+            <p>
+                Where liability cannot be excluded, our total liability for claims relating to the
+                app is limited to the amount you paid us for BattleCall in the 12 months before the
+                claim, or EUR 50 if you paid nothing, except for liability that the law does not
+                allow us to limit (including death or personal injury caused by negligence, fraud,
+                or product-liability rules that apply to consumers).
+            </p>
+
+            <h2>11. EEA and United Kingdom Consumers</h2>
+            <p>
+                If you live in the EEA or the UK and use BattleCall as a consumer:
+            </p>
+            <ul>
+                <li>These Terms do not affect your mandatory statutory rights.</li>
+                <li>Digital content must be in line with the contract. If it is not, you may have
+                    remedies under local consumer law.</li>
+                <li>You may have a cooling-off right for digital purchases under Google Play's
+                    rules and applicable law, which can end once the content is fully supplied
+                    with your consent.</li>
+                <li>You may bring proceedings in the courts of your country of residence.</li>
+            </ul>
+
+            <h2>12. Termination</h2>
+            <p>
+                You may stop using BattleCall at any time by uninstalling it. We may restrict or
+                terminate access if you breach these Terms or if we discontinue the app.
+                Uninstalling removes local data on that device. Store purchases remain subject to
+                Google Play's account rules.
+            </p>
+
+            <h2>13. Governing Law</h2>
+            <p>
+                These Terms are governed by the laws of Pakistan, without regard to conflict-of-law
+                rules, except that consumers in the EEA or the UK keep the mandatory protections of
+                the country where they live.
+            </p>
+
+            <h2>14. Contact</h2>
+            <p>
+                Questions about these Terms: <a href="mailto:maken.hq@gmail.com">maken.hq@gmail.com</a>
+                or <a href="https://maken.dev" target="_blank" rel="noopener">maken.dev</a>.
+            </p>
+            <p>
+                Privacy details are in our <a href="./privacy-policy.html">Privacy Policy</a>.
+            </p>
+        </div>
+
+        <div class="contact-section">
+            <div class="contact-logo">
+                <img src="./assets/splash screen.png" alt="maken.dev" onerror="this.style.display='none'">
+            </div>
+            <h2>Contact Us</h2>
+            <p>
+                Questions about these Terms of Service? Reach us at:
+            </p>
+            <p style="margin-top: 20px;">
+                <strong>maken.dev</strong><br>
+                Email: <a href="mailto:maken.hq@gmail.com">maken.hq@gmail.com</a><br>
+                Website: <a href="https://maken.dev" target="_blank" rel="noopener">maken.dev</a>
+            </p>
+            <p style="margin-top: 30px; font-size: 0.9em; opacity: 0.9;">
+                We aim to respond to all inquiries within 48 hours.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>
+                <strong>BattleCall</strong> - Your AI Alarm &amp; Reminder Coach<br>
+                Developed by <span class="company-logo">maken.dev</span><br>
+                © 2026 maken.dev. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
